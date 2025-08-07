@@ -1,0 +1,49 @@
+export const lightTheme = {
+  bgColor: "#F5F5F5",
+  textColor: "#333333",
+  buttonColor: "#FFC107",
+  bgSignButton: "#E0E0E0",
+  signButtonText: "#333333",
+  buttonText: "#fff",
+  inputBorder: "#252932",
+  bgInput: "#fff",
+  inputText: "#929292",
+  toggleSelect: "#fff",
+  bgToggle: "#3B3B3B",
+  dashLightGreen: "#C8E6C9",
+  dashDarkGreen: "#C0E8C6",
+  dashBlue: "#B3D9F7",
+  dashYellow: "#FFFDE7",
+  dashDarkPink: "#FFD6D6",
+  dashLightPink: "#FFE0F0",
+  noticeBlue: "#8F9FF2",
+  noticeText: "#000",
+};
+
+export const darkTheme = {
+  bgColor: "#1E1E1E",
+  textColor: "#ddd",
+  buttonColor: "#FFD446",
+  bgSignButton: "#FFF",
+  signButtonText: "#BDBDBD",
+  buttonText: "#fff",
+  inputBorder: "#1E1E1E",
+  bgInput: "#252932",
+  inputText: "#929292",
+  toggleSelect: "#636363",
+  bgToggle: "#DDDDDD",
+  dashLightGreen: "#98DFB6",
+  dashDarkGreen: "#98DFB6",
+  dashBlue: "#ADD8E6",
+  dashYellow: "#FFF9C4",
+  dashDarkPink: "#FFB3B3",
+  dashLightPink: "#FFCCE5",
+  noticeBlue: "#8F9FF2",
+  noticeText: "#fff",
+};
+
+export const theme = {
+  darkTheme,
+  lightTheme,
+}
+

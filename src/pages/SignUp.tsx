@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import onlabLogo from '/Logo.svg';
+import { Link } from "react-router-dom";
 
 const SignUp = () => {
   const [id, setId] = useState('');
@@ -70,7 +71,9 @@ const SignUp = () => {
 
   return (
     <Container>
-      <Logo src={onlabLogo} alt="온랩 로고" />
+      <StyledLink to="/">
+        <Logo src={onlabLogo} alt="온랩 로고" />
+      </StyledLink>
       <Title>마음온도</Title>
       <Form onSubmit={handleSubmit}>
         <InputWrapper>
@@ -114,7 +117,7 @@ const SignUp = () => {
           {schoolError && <ErrorText>학교 이름을 입력해주세요.</ErrorText>}
         </InputWrapper>
         <InputWrapper>
-          <FileInputLabel htmlFor="file-upload">
+          <FileInputLabel htmlFor="file-upload" fileError={fileError}>
           <LabelText hasFile={!!file}>{file ? file.name : '재직증명서'}</LabelText>
             <FileInput
               id="file-upload"
@@ -148,6 +151,10 @@ const Container = styled.div`
   justify-content: center;
   align-items: center;
   gap: 24px;
+`;
+
+const StyledLink = styled(Link)`
+  text-decoration: none;
 `;
 
 const Logo = styled.img`
@@ -190,12 +197,12 @@ const Input = styled.input<{ hasError?: boolean }>`
   }
 `;
 
-const FileInputLabel = styled.label`
+const FileInputLabel = styled.label<{ fileError?: boolean}>`
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: ${({ theme }) => theme.bgInput};
-  border: 1.5px solid ${({ theme }) => theme.inputBorder};
+  border: 1.5px solid ${({ fileError, theme }) => (fileError ? '#FF4D4F' : theme.inputBorder)};
   border-radius: 6px;
   padding: 12px 14px;
   font-size: 16px;

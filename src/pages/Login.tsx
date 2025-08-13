@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import onlabLogo from '/Logo.svg';
+import { Link } from 'react-router-dom';
 
 const Login = () => {
   const [id, setId] = useState('');
@@ -30,7 +31,9 @@ const Login = () => {
 
   return (
     <Container>
-      <Logo src={onlabLogo} alt="온랩 로고" />
+      <StyledLink to="/">
+        <Logo src={onlabLogo} alt="온랩 로고" />
+      </StyledLink>
       <Title>마음온도</Title>
       <Form onSubmit={handleSubmit}>
         <InputWrapper>
@@ -70,6 +73,10 @@ const Container = styled.div`
   justify-content: center;
   align-items: center;
   gap: 24px;
+`;
+
+const StyledLink = styled(Link)`
+  text-decoration: none;
 `;
 
 const Logo = styled.img`

@@ -1,9 +1,14 @@
 import styled from "styled-components";
+import onlabLogo from '/Logo.svg'
+import { Link } from "react-router-dom";
 
 const Terms = () => {
   return (
     <Container>
       <Content>
+        <StyledLink to="/">
+          <Logo src={onlabLogo} alt="온랩 로고" />
+        </StyledLink>
         <Title>📄 서비스 이용 약관</Title>
 
         <Section>
@@ -115,13 +120,22 @@ const Terms = () => {
 export default Terms;
 
 const Container = styled.div`
-  padding: 1340px 20px 100px; 
+  padding: 1360px 20px 100px; 
   width: 100vw;
   margin: 30px auto;
   color: ${({ theme }) => theme.textColor};
   overflow-y: auto;
   min-height: 100vh;
   background-color: ${({ theme }) => theme.bgColor};
+`;
+
+const StyledLink = styled(Link)`
+  text-decoration: none;
+`;
+
+const Logo = styled.img`
+  margin: 28px 0;
+  height: 80px;
 `;
 
 const Content = styled.div`
@@ -147,7 +161,7 @@ const Section = styled.div`
 
 const Divider = styled.hr`
   border: none;
-  border-top: 1px solid ${({ theme }) => theme.inputBorder};
+  border-top: 1px solid ${({ theme }) => theme.textColor};
   margin: 24px 0;
 `;
 

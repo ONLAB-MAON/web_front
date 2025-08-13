@@ -13,6 +13,7 @@ import Footer from './components/Footer';
 import Terms from './pages/footer/Terms';
 import Privacy from './pages/footer/Privacy';
 import Support from './pages/footer/Support';
+import DashBoard from './pages/DashBoard';
 
 function App() {
   return (
@@ -36,6 +37,7 @@ const AppContent = () => {
         <Route path='/home' element={<Home />} />
         <Route path='/login' element={<Login />} />
         <Route path='/signup' element={<SignUp />} />
+        <Route path='/dash' element={<DashBoard />} />
         <Route path="/terms" element={<Terms />} />
         <Route path="/privacy" element={<Privacy />} />
         <Route path="/support" element={<Support />} />

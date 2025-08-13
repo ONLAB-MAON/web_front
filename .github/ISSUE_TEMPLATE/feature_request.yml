@@ -1,5 +1,5 @@
-name: "[Feature] 새로운 기능 제안"
-description: "프로젝트에 추가할 새로운 기능을 제안해주세요."
+name: "[Feature] 새로운 기능"
+description: "프로젝트에 추가할 새로운 기능을 작성해주세요."
 title: "[Feature] " # 이슈 기본 제목 형식
 labels: ["feature"]
 body:

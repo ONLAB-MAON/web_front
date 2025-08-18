@@ -19,6 +19,8 @@ declare module "styled-components" {
     dashYellow: string,
     dashDarkPink: string,
     dashLightPink: string,
+    dashButtonGreen: string,
+    dashButtonPink: string,
     noticeBlue: string,
     noticeText: string,
   }

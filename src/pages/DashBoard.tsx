@@ -89,20 +89,21 @@ const ContentNotice = styled.div`
 
 const ContentChart = styled.div`
   background-color: ${({ theme }) => theme.dashDarkGreen};
-  width: 25rem;
+  width: 26rem;
   height: 300px;
   border-radius: 10px;
 `;
 
 const ContentPlan = styled.div`
   background-color: ${({ theme }) => theme.dashLightPink};
-  width: 25rem;
+  width: 24rem;
   height: 300px;
   border-radius: 10px;
   text-align: center;
   font-size: 24px;
   font-weight: 600;
   padding: 140px 2rem;
+  color: #000;
 `;
 
 

@@ -10,6 +10,7 @@ const Counsel = () =>{
       </TitleBox>
       <StudentBox>
         <StudentText>최현우(3학년)</StudentText>
+        <TimeText>11시 30분 ~ 11시 40분</TimeText>
         <SubmitBox>
           <YesButton>수락</YesButton>
           <NoButton>거절</NoButton>
@@ -17,6 +18,7 @@ const Counsel = () =>{
       </StudentBox>
       <StudentBox>
         <StudentText>이승보(3학년)</StudentText>
+        <TimeText>12시 50분 ~ 13시</TimeText>
         <SubmitBox>
           <YesButton>수락</YesButton>
           <NoButton>거절</NoButton>
@@ -24,6 +26,7 @@ const Counsel = () =>{
       </StudentBox>
       <StudentBox>
         <StudentText>김용주(3학년)</StudentText>
+        <TimeText>13시 30분 ~ 13시 40분</TimeText>
         <SubmitBox>
           <YesButton>수락</YesButton>
           <NoButton>거절</NoButton>
@@ -81,6 +84,11 @@ const StudentText = styled.p`
   font-size: 16px;
   font-weight: 500;
 `;
+
+const TimeText = styled.p`
+  font-size: 15px;
+  font-weight: 500;
+`
 
 const SubmitBox = styled.div`
   height: 40px;

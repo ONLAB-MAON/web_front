@@ -34,9 +34,8 @@ const TitleBox = styled.div`
   align-items: center;
 `
 
-const Title = styled.p`
+const Title = styled.h2`
   font-size: 20px;
-  font-weight: 600;
   color: #000;
 `;
 
@@ -64,6 +63,7 @@ const NoticeTitle = styled.span`
   font-size: 14px;
   font-weight: 600;
   margin-right: 0.6rem;
+  color: #000;
 `;
 
 const Explanation = styled.span`
@@ -71,6 +71,7 @@ const Explanation = styled.span`
   left: 0;
   font-size: 12px;
   font-weight: 400;
+  color: #000;
 `;
 
 export default Notice;

@@ -1,5 +1,7 @@
 import { createGlobalStyle } from "styled-components";
 import reset from "styled-reset"
+import PretendardRegular from "../assets/fonts/woff2/Pretendard-Regular.woff2";
+import PretendardBold from "../assets/fonts/woff2/Pretendard-Bold.woff2";
 
 export const GlobalStyle = createGlobalStyle`
   ${reset}
@@ -27,5 +29,21 @@ export const GlobalStyle = createGlobalStyle`
   button{
     cursor: pointer;
     border-radius: 8px;
+    font-family: 'Pretendard', sans-serif;
   }
+
+  @font-face {
+    font-family: 'Pretendard';
+    src: url(${PretendardRegular}) format('woff2');
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Pretendard';
+    src: url(${PretendardBold}) format('woff2');
+    font-weight: 700;
+    font-style: normal;
+  }
+
 `;

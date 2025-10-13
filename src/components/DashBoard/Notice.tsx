@@ -1,12 +1,16 @@
 import styled from "styled-components";
 import { ChevronRight } from "lucide-react";
 
+const PlusNotice = () => {
+  
+} 
+
 const Notice = () => {
   return (
     <Container>
       <TitleBox>
         <Title>공지사항</Title>
-        <PlusText>더보기<ChevronRight /></PlusText>
+        <PlusText onClick={PlusNotice}>더보기<ChevronRight /></PlusText>
       </TitleBox>
       <TextBox>
         <NoticeTitle>상담 신청을 하려면?</NoticeTitle>
@@ -23,19 +27,19 @@ const Notice = () => {
 const Container = styled.div`
   width: 100%;
   min-height: 100vh;
-  padding: 16px;
+  padding: 1rem;
 `;
 
 const TitleBox = styled.div`
   width: 100%;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 12px;
+  margin-bottom: 0.75rem;
   align-items: center;
 `
 
 const Title = styled.h2`
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 600;
   color: #000;
 `;
@@ -48,7 +52,7 @@ const PlusText = styled.p`
   align-items: center;
   cursor: pointer;
   color: #000;
-  margin-right: 2px;
+  margin-right: 0.125rem;
 
   &:hover {
     opacity: 0.8;
@@ -61,7 +65,7 @@ const TextBox = styled.div`
 `;
 
 const NoticeTitle = styled.span`
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 600;
   margin-right: 0.6rem;
   color: #000;
@@ -70,7 +74,7 @@ const NoticeTitle = styled.span`
 const Explanation = styled.span`
   width: 100%;
   left: 0;
-  font-size: 12px;
+  font-size: 0.75rem;
   font-weight: 400;
   color: #000;
 `;

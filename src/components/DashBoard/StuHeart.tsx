@@ -42,13 +42,13 @@ const StuHeart = () => {
 const Container = styled.div`
   width: 100%;
   min-height: 100vh;
-  padding: 16px;
+  padding: 1rem;
 `;
 
 const Title = styled.h2`
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 600;
-  margin-bottom: 12px;
+  margin-bottom: 0.75rem;
   color: #000;
 `;
 
@@ -56,7 +56,7 @@ const Table = styled.table`
   width: 100%;
   margin: 0 auto;
   border-collapse: unset;
-  border-radius: 8px;
+  border-radius: 0.5rem;
   overflow: hidden;
   text-align: center;
 `;
@@ -74,7 +74,7 @@ const Tbody = styled.tbody`
 const Th = styled.th`
   color: #000;
   font-weight: 600;
-  padding: 8px 12px;
+  padding: 0.5rem 0.75rem;
 `;
 
 const Tr = styled.tr`
@@ -85,8 +85,8 @@ const Tr = styled.tr`
 `;
 
 const Td = styled.td`
-  padding: 8px 12px;
-  font-size: 14px;
+  padding: 0.5rem 0.75rem; 
+  font-size: 0.875rem;
 
   strong {
     font-weight: 700;
@@ -95,7 +95,7 @@ const Td = styled.td`
 `;
 
 const NoText = styled.p`
-  font-size: 13px;
+  font-size: 0.8125rem;
   font-weight: 600;
 `
 
@@ -109,8 +109,8 @@ const SendWrapper = styled.div`
 `;
 
 const SendText = styled.p`
-  font-size: 10px;
-  margin-top: 3px;
+  font-size: 0.625rem; 
+  margin-top: 0.1875rem;
 `;
 
 export default StuHeart;

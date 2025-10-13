@@ -28,7 +28,7 @@ const Container = styled.div`
 
 const IconAvgHeartTem = styled.div`
   width: 100%;
-  height: 80px;
+  height: 5rem;
   margin: 1.5rem auto 1.2rem;
   font-size: 4rem;
   text-align: center;
@@ -49,13 +49,13 @@ const TextBox = styled.div`
 const TextAvg = styled.span`
   width: 100%;
   color: #000;
-  font-size: 18px;
+  font-size: 1.125rem;
 `
 
 const TextValue = styled.span`
   width: 100%;
   color: #929292;
-  font-size: 16px;
+  font-size: 1rem;
 `
 
 export default AvgHeartTem;

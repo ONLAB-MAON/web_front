@@ -67,15 +67,15 @@ const Chart = () => {
 const Container = styled.div`
   width: 100%;
   min-height: 100vh;
-  padding: 16px;
+  padding: 1rem;
 `;
 
 const Title = styled.h2`
   width: 100%;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 600;
   left: 0;
-  margin-bottom: -20px;
+  margin-bottom: -1.25rem;
   color: #000;
 `;
 

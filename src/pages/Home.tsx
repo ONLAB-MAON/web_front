@@ -30,13 +30,13 @@ const Contents = styled.div`
   height: 100vh;           
   width: 100%;
   text-align: center;
-  gap: 20px; 
+  gap: 1.25rem; 
   background-color: ${({ theme }) => theme.bgColor};
 `;
 
 const Title = styled.h2`
   font-weight: 700;
-  font-size: 24px;
+  font-size: 1.5rem;
   color: #FFD446;
   margin-top: 0;
 `;
@@ -44,8 +44,8 @@ const Title = styled.h2`
 const ButtonGroup = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 12px;
-  width: 200px;
+  gap: 0.75rem;
+  width: clamp(150px, 50vw, 280vw);
 
   & > a {
     text-decoration: none;
@@ -62,14 +62,14 @@ const LoginButton = styled.button`
   background-color: ${({ theme }) => theme.buttonColor}; 
   color: #fff;
   font-weight: 600;
-  font-size: 16px;
-  padding: 12px 0;
+  font-size: 1rem;
+  padding: 0.75rem 0;
   border: none;
-  border-radius: 8px;
+  border-radius: 0.5rem;
   width: 100%;
   &:hover {
     transform: translateY(-1px);
-    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    box-shadow: 0 0.1875rem 0.375rem rgba(0,0,0,0.1);
   }
   &:focus {
     outline: none;
@@ -80,14 +80,14 @@ const SignUpButton = styled.button`
   background-color: ${({ theme }) => theme.bgSignButton}; 
   color: ${({ theme }) => theme.signButtonText};
   font-weight: 600;
-  font-size: 16px;
-  padding: 12px 0;
+  font-size: 1rem;
+  padding: 0.75rem 0;
   border: none;
-  border-radius: 8px;
+  border-radius: 0.5rem;
   width: 100%;
   &:hover {
     transform: translateY(-1px);
-    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    box-shadow: 0 0.1875rem 0.375rem rgba(0,0,0,0.1);
   }
   &:focus {
     outline: none;
@@ -95,8 +95,8 @@ const SignUpButton = styled.button`
 `;
 
 const Notice = styled.p`
-  font-size: 12px;
+  font-size: 0.75rem;
   color: ${({ theme }) => theme.textColor};
   opacity: 0.5;
-  margin-top: 10px;
+  margin-top: 0.625rem;
 `;

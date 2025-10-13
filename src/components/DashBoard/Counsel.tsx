@@ -39,19 +39,19 @@ const Counsel = () =>{
 const Container = styled.div`
   width: 100%;
   min-height: 100vh;
-  padding: 16px;
+  padding: 1rem;
 `;
 
 const TitleBox = styled.div`
   width: 100%;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 12px;
+  margin-bottom: 0.75rem;
   align-items: center;
 `
 
 const Title = styled.p`
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 600;
   color: #000;
 `;
@@ -73,34 +73,34 @@ const PlusText = styled.p`
 const StudentBox = styled.div`
   display: flex;
   width: 100%;
-  margin-left: 4px;
-  margin-bottom: 4px;
+  margin-left: 0.25rem;
+  margin-bottom: 0.25rem;
   justify-content: space-between;
   align-items: center;
   color: #000;
 `;
 
 const StudentText = styled.p`
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 500;
 `;
 
 const TimeText = styled.p`
-  font-size: 15px;
+  font-size: 0.9375rem;
   font-weight: 500;
 `
 
 const SubmitBox = styled.div`
-  height: 40px;
+  height: 2.5rem;
 `;
 
 const YesButton = styled.button`
   background-color: ${({ theme }) => theme.dashButtonGreen};
-  margin-right: 4px;
+  margin-right: 0.25rem;
   color: #fff;
   font-weight: 500;
-  padding: 8px 14px;
-  font-size: 14px;
+  padding: 0.5rem 0.875rem; 
+  font-size: 0.875rem;
 
   &:hover {
     background-color: ${({ theme }) => theme.dashDarkGreen};
@@ -111,8 +111,8 @@ const NoButton = styled.button`
   background-color: ${({ theme }) => theme.dashButtonPink};
   color: #fff;
   font-weight: 500;
-  padding: 8px 14px;
-  font-size: 14px;
+  padding: 0.5rem 0.875rem; 
+  font-size: 0.875rem;
 
   &:hover {
     background-color: ${({ theme }) => theme.dashDarkPink};

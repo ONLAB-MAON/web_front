@@ -120,9 +120,9 @@ const Terms = () => {
 export default Terms;
 
 const Container = styled.div`
-  padding: 1360px 20px 100px; 
+  padding: 85rem 1.25rem 6.25rem;
   width: 100vw;
-  margin: 30px auto;
+  margin: 1.875rem auto;
   color: ${({ theme }) => theme.textColor};
   overflow-y: auto;
   min-height: 100vh;
@@ -134,41 +134,41 @@ const StyledLink = styled(Link)`
 `;
 
 const Logo = styled.img`
-  margin: 28px 0;
-  height: 80px;
+  margin: 1.75rem 0;
+  height: 5rem;
 `;
 
 const Content = styled.div`
-  max-width: 800px;
+  max-width: 50rem;
   margin: 0 auto;
 `;
 
 const Title = styled.h1`
-  font-size: 24px;
-  margin-bottom: 24px;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
 `;
 
 const SectionTitle = styled.h2`
-  font-size: 18px;
-  margin: 24px 0 8px;
+  font-size: 1.125rem; 
+  margin: 1.5rem 0 0.5rem;
 `;
 
 const Section = styled.div`
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 1.7;
   white-space: pre-line;
 `;
 
 const Divider = styled.hr`
   border: none;
-  border-top: 1px solid ${({ theme }) => theme.textColor};
-  margin: 24px 0;
+  border-top: 0.0625rem solid ${({ theme }) => theme.textColor};
+  margin: 1.5rem 0;
 `;
 
 const List = styled.ul`
-  margin-top: 10px;
-  margin-left: 18px;
+  margin-top: 0.625rem; 
+  margin-left: 1.125rem;
   li {
-    margin-bottom: 8px;
+    margin-bottom: 0.5rem;
   }
 `;

@@ -72,7 +72,7 @@ const Container = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 24px;
+  gap: 1.5rem;
 `;
 
 const StyledLink = styled(Link)`
@@ -80,22 +80,23 @@ const StyledLink = styled(Link)`
 `;
 
 const Logo = styled.img`
-  width: 80px;
-  height: 80px;
+  width: 5rem;
+  height: 5rem;
 `;
 
 const Title = styled.h1`
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 700;
   color: #FFD446; 
   margin: 0;
 `;
 
 const Form = styled.form`
-  width: 320px;
+  max-width: 20rem;
+  width: 90%;
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 1rem;
 `;
 
 const InputWrapper = styled.div`
@@ -104,15 +105,15 @@ const InputWrapper = styled.div`
 
 const Input = styled.input<{ hasError?: boolean }>`
   width: 100%;
-  padding: 12px 14px;
+  padding: 0.75rem 0.875rem;
   background-color: ${({theme}) => theme.bgInput};
   color: ${({theme}) => theme.textColor};
-  border: 1.5px solid ${({ hasError, theme }) => hasError ? '#FF0000' : theme.inputBorder};
-  border-radius: 6px;
-  font-size: 16px;
+  border: 0.09375rem solid ${({ hasError, theme }) => hasError ? '#FF0000' : theme.inputBorder};
+  border-radius: 0.375rem;
+  font-size: 1rem;
   outline: none;
   transition: border-color 0.3s ease;
-  margin-bottom: 8px;
+  margin-bottom: 0.5rem;
   &:focus {
     border-color: ${({theme}) => theme.buttonColor};
   }
@@ -120,9 +121,9 @@ const Input = styled.input<{ hasError?: boolean }>`
 
 const ErrorText = styled.span`
   position: absolute;
-  top: 46px;
+  top: 2.875rem;
   left: 0px;
-  font-size: 12px;
+  font-size: 0.75rem;
   color: #FF4D4F;
 `;
 
@@ -130,16 +131,16 @@ const SubmitButton = styled.button`
   background-color: ${({ theme }) => theme.buttonColor};
   color: #fff;
   font-weight: 700;
-  font-size: 16px;
-  padding: 12px 0;
+  font-size: 1rem;
+  padding: 0.75rem 0;
   border: none;
-  border-radius: 6px;
+  border-radius: 0.375rem;
   cursor: pointer;
   transition: background-color 0.3s ease;
 
   &:hover {
     transform: translateY(-1px);
-    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    box-shadow: 0 0.1875rem 0.375rem rgba(0,0,0,0.1);
   }
 
   &:focus {

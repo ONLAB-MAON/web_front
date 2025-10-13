@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import onlabLogo from '/Logo.svg';
+import { Link } from "react-router-dom";
 
 const SignUp = () => {
   const [id, setId] = useState('');
@@ -70,7 +71,9 @@ const SignUp = () => {
 
   return (
     <Container>
-      <Logo src={onlabLogo} alt="온랩 로고" />
+      <StyledLink to="/">
+        <Logo src={onlabLogo} alt="온랩 로고" />
+      </StyledLink>
       <Title>마음온도</Title>
       <Form onSubmit={handleSubmit}>
         <InputWrapper>
@@ -114,7 +117,7 @@ const SignUp = () => {
           {schoolError && <ErrorText>학교 이름을 입력해주세요.</ErrorText>}
         </InputWrapper>
         <InputWrapper>
-          <FileInputLabel htmlFor="file-upload">
+          <FileInputLabel htmlFor="file-upload" fileError={fileError}>
           <LabelText hasFile={!!file}>{file ? file.name : '재직증명서'}</LabelText>
             <FileInput
               id="file-upload"
@@ -147,26 +150,31 @@ const Container = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 24px;
+  gap: 1.5rem;
+`;
+
+const StyledLink = styled(Link)`
+  text-decoration: none;
 `;
 
 const Logo = styled.img`
   width: auto;
-  height: 80px;
+  height: 5rem;
 `;
 
 const Title = styled.h1`
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 700;
   color: ${({ theme }) => theme.textColor};
   margin: 0;
 `;
 
 const Form = styled.form`
-  width: 360px;
+  max-width: 22.5rem;
+  width: 90%;
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 1rem;
 `;
 
 const InputWrapper = styled.div`
@@ -175,36 +183,36 @@ const InputWrapper = styled.div`
 
 const Input = styled.input<{ hasError?: boolean }>`
   width: 100%;
-  padding: 12px 14px;
+  padding: 0.75rem 0.875rem;
   background-color: ${({ theme }) => theme.bgInput};
   color: ${({ theme }) => theme.textColor};
-  border: 1.5px solid ${({ hasError, theme }) => (hasError ? '#FF4D4F' : theme.inputBorder)};
-  border-radius: 6px;
-  font-size: 16px;
+  border: 0.09375rem solid ${({ hasError, theme }) => (hasError ? '#FF4D4F' : theme.inputBorder)};
+  border-radius: 0.375rem;
+  font-size: 1rem;
   outline: none;
   transition: border-color 0.3s ease;
-  margin-bottom: 8px;
+  margin-bottom: 0.5rem;
 
   &:focus {
     border-color: ${({ theme }) => theme.buttonColor};
   }
 `;
 
-const FileInputLabel = styled.label`
+const FileInputLabel = styled.label<{ fileError?: boolean}>`
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: ${({ theme }) => theme.bgInput};
-  border: 1.5px solid ${({ theme }) => theme.inputBorder};
-  border-radius: 6px;
-  padding: 12px 14px;
-  font-size: 16px;
+  border: 0.09375rem solid ${({ fileError, theme }) => (fileError ? '#FF4D4F' : theme.inputBorder)};
+  border-radius: 0.375rem;
+  padding: 0.75rem 0.875rem; 
+  font-size: 1rem;
   cursor: pointer;
 `;
 
 const LabelText = styled.span<{ hasFile: boolean }>`
   color: ${({ hasFile, theme }) => (hasFile ? theme.textColor : theme.inputText)};
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 500;
 `
 
@@ -213,18 +221,18 @@ const FileInput = styled.input`
 `;
 
 const FileHelpText = styled.p`
-  font-size: 12px;
+  font-size: 0.75rem;
   font-weight: 600;
   color: ${({ theme }) => theme.noticeText};
   opacity: 0.6;
-  margin-top: 4px;
+  margin-top: 0.25rem;
 `;
 
 const ErrorText = styled.span`
   position: absolute;
-  top: 46px;
+  top: 2.875rem;
   left: 0px;
-  font-size: 12px;
+  font-size: 0.75rem;
   color: #FF4D4F;
 `;
 
@@ -232,17 +240,17 @@ const SubmitButton = styled.button`
   background-color: ${({ theme }) => theme.buttonColor};
   color: #fff;
   font-weight: 700;
-  font-size: 16px;
-  padding: 12px 0;
+  font-size: 1rem;
+  padding: 0.75rem 0;
   border: none;
-  border-radius: 6px;
-  margin-top: 20px;
+  border-radius: 0.375rem;
+  margin-top: 1.25rem;
   cursor: pointer;
   transition: background-color 0.3s ease;
 
   &:hover {
     transform: translateY(-1px);
-    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    box-shadow: 0 0.1875rem 0.375rem rgba(0,0,0,0.1);
   }
 
   &:focus {

@@ -16,6 +16,8 @@ export const lightTheme = {
   dashYellow: "#FFFDE7",
   dashDarkPink: "#FFD6D6",
   dashLightPink: "#FFE0F0",
+  dashButtonGreen: "#B8E6B8",
+  dashButtonPink: "#FFB6B6",
   noticeBlue: "#8F9FF2",
   noticeText: "#000",
 };
@@ -38,6 +40,8 @@ export const darkTheme = {
   dashYellow: "#FFF9C4",
   dashDarkPink: "#FFB3B3",
   dashLightPink: "#FFCCE5",
+  dashButtonGreen: "#88CC99",
+  dashButtonPink: "#FF8888",
   noticeBlue: "#8F9FF2",
   noticeText: "#fff",
 };
